@@ -2,6 +2,7 @@ import 'package:anota_ped/repository/login.dart';
 import 'package:flutter/material.dart';
 import 'package:anota_ped/views/home.dart';
 import 'package:anota_ped/repository/menu.dart';
+import 'package:postgres/postgres.dart';
 
 class MyApp extends StatelessWidget {
   @override
