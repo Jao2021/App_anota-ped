@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:anota_ped/views/home.dart';
 import 'package:anota_ped/repository/menu.dart';
 
+// @dart=2.9
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
