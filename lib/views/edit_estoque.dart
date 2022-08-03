@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Edit_cliente extends StatefulWidget {
-  const Edit_cliente({Key? key}) : super(key: key);
+class Edit_estoque extends StatefulWidget {
+  const Edit_estoque({Key? key}) : super(key: key);
 
   @override
-  _Edit_clienteState createState() => _Edit_clienteState();
+  State<Edit_estoque> createState() => _Edit_estoqueState();
 }
 
-class _Edit_clienteState extends State<Edit_cliente> {
+class _Edit_estoqueState extends State<Edit_estoque> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +33,7 @@ class _Edit_clienteState extends State<Edit_cliente> {
           height: 200.0,
           child: Center(
             child: Text(
-              "Editar Cliente",
+              "Editar Produtos",
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 25.0,
@@ -65,10 +65,10 @@ class _Edit_clienteState extends State<Edit_cliente> {
               Padding(
                 padding: EdgeInsets.only(top: 10),
                 child: TextFormField(
-                  keyboardType: TextInputType.number,
+                  keyboardType: TextInputType.emailAddress,
                   decoration: InputDecoration(
-                      hintText: "Telefone",
-                      hintStyle: TextStyle(
+                      labelText: "Preço",
+                      labelStyle: TextStyle(
                         color: Colors.black38,
                         fontSize: 15,
                         fontWeight: FontWeight.w400,
@@ -82,10 +82,10 @@ class _Edit_clienteState extends State<Edit_cliente> {
               Padding(
                 padding: EdgeInsets.only(top: 10),
                 child: TextFormField(
-                  keyboardType: TextInputType.number,
+                  keyboardType: TextInputType.emailAddress,
                   decoration: InputDecoration(
-                      hintText: "Pedidos feitos",
-                      hintStyle: TextStyle(
+                      labelText: "Quantidade",
+                      labelStyle: TextStyle(
                         color: Colors.black38,
                         fontSize: 15,
                         fontWeight: FontWeight.w400,

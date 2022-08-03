@@ -3,6 +3,8 @@ import 'package:anota_ped/repository/login.dart';
 import 'package:anota_ped/views/add_cliente.dart';
 import 'package:anota_ped/views/clientes_page.dart';
 import 'package:anota_ped/views/edit_cliente.dart';
+import 'package:anota_ped/views/edit_estoque.dart';
+import 'package:anota_ped/views/estoque_page.dart';
 import 'package:flutter/material.dart';
 import 'package:anota_ped/views/home.dart';
 import 'package:anota_ped/repository/menu.dart';
@@ -24,6 +26,8 @@ class MyApp extends StatelessWidget {
         '/cliente': (context) => Cliente_page(),
         '/addcli': (context) => Add_cliente(),
         '/edtcli': (context) => Edit_cliente(),
+        '/estoque': (context) => Estoque_page(),
+        '/edtest': (context) => Edit_estoque(),
       },
       initialRoute: '/',
     );

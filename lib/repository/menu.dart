@@ -66,7 +66,9 @@ class _Menu_drawnerState extends State<Menu_drawner> {
                 'Estoque',
                 style: TextStyle(fontSize: 11),
               ),
-              onTap: () => null,
+              onTap: () {
+                Navigator.pushNamed(context, '/estoque');
+              },
             ),
             ListTile(
               contentPadding: EdgeInsets.only(left: 25),

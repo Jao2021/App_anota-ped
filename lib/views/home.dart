@@ -112,8 +112,7 @@ class _HomeState extends State<Home> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.all(16.0),
-                            child: Text("fdf"),
+                            padding: EdgeInsets.all(15.0),
                           )
                         ],
                       ),

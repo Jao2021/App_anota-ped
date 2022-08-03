@@ -187,7 +187,7 @@ class _Cliente_pageState extends State<Cliente_page> {
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.blue.shade800,
         child: Icon(Icons.person_add_alt),
-        tooltip: 'Adicionar Cliente',
+        tooltip: 'Adicionar Produto',
         onPressed: () {
           Navigator.pushNamed(context, '/addcli');
         },
