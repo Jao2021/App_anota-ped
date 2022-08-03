@@ -42,7 +42,7 @@ class _Edit_clienteState extends State<Edit_cliente> {
           ),
         ),
         Container(
-          padding: EdgeInsets.only(top: 140, left: 35, right: 35),
+          padding: EdgeInsets.only(top: 160, left: 35, right: 35),
           child: ListView(
             children: <Widget>[
               Padding(
@@ -77,7 +77,7 @@ class _Edit_clienteState extends State<Edit_cliente> {
                 ),
               ),
               SizedBox(
-                height: 100,
+                height: 120,
               ),
               Container(
                 height: 60,
@@ -86,11 +86,7 @@ class _Edit_clienteState extends State<Edit_cliente> {
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                     //borderRadius: BorderRadius.vertical(bottom:Radius.circular(15)),
-                    gradient: LinearGradient(
-                      colors: [Colors.blue, Colors.blue.shade900],
-                      begin: Alignment.bottomRight,
-                      end: Alignment.topLeft,
-                    ),
+                    color: Colors.blue.shade800,
                     borderRadius: BorderRadius.all(Radius.circular(30))),
                 child: SizedBox(
                   child: TextButton(

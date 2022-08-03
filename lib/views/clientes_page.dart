@@ -56,10 +56,6 @@ class _Cliente_pageState extends State<Cliente_page> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: Text(
-          "Anota-ped > Clientes",
-          style: TextStyle(fontSize: 20),
-        ),
         elevation: 0,
         backgroundColor: Colors.transparent,
         actions: <Widget>[
@@ -99,11 +95,11 @@ class _Cliente_pageState extends State<Cliente_page> {
               ),
             ),
             Container(
-                padding: EdgeInsets.only(top: 140, left: 10, right: 10),
+                padding: EdgeInsets.only(top: 130, left: 15, right: 15),
                 child: ListView(children: <Widget>[
                   Container(
                       child: Card(
-                          elevation: 5,
+                          elevation: 3,
                           child: ListTile(
                             leading: Icon(
                               Icons.person_outline,
@@ -120,7 +116,7 @@ class _Cliente_pageState extends State<Cliente_page> {
                                 context: context,
                                 builder: (BuildContext context) => AlertDialog(
                                   title: Text(
-                                    'Dados do Cliente',
+                                    'Nome',
                                     style: TextStyle(
                                       fontSize: 25.0,
                                     ),
@@ -133,11 +129,6 @@ class _Cliente_pageState extends State<Cliente_page> {
                                         CrossAxisAlignment.start,
                                     mainAxisSize: MainAxisSize.min,
                                     children: <Widget>[
-                                      Text("Nome:",
-                                          style: TextStyle(
-                                              fontSize: 18,
-                                              fontWeight: FontWeight.bold)),
-                                      SizedBox(height: 10),
                                       Text("Telefone:",
                                           style: TextStyle(
                                               fontSize: 18,
@@ -152,10 +143,23 @@ class _Cliente_pageState extends State<Cliente_page> {
                                         children: <Widget>[
                                           TextButton(
                                             child: Text(
+                                              "Deletar",
+                                              style: TextStyle(
+                                                color: Colors.red,
+                                                fontSize: 17,
+                                              ),
+                                            ),
+                                            onPressed: () {
+                                              Navigator.pop(context);
+                                            },
+                                          ),
+                                          SizedBox(width: 110),
+                                          TextButton(
+                                            child: Text(
                                               "Voltar",
                                               style: TextStyle(
                                                 color: Colors.blue.shade800,
-                                                fontSize: 15,
+                                                fontSize: 17,
                                               ),
                                             ),
                                             onPressed: () {
@@ -181,7 +185,7 @@ class _Cliente_pageState extends State<Cliente_page> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.blue.shade700,
+        backgroundColor: Colors.blue.shade800,
         child: Icon(Icons.person_add_alt),
         tooltip: 'Adicionar Cliente',
         onPressed: () {
