@@ -6,7 +6,7 @@ O projeto foi criado utilizando a linguagem dart e flutter, foi aplicado tambem 
 Repositório do banco de dados : https://github.com/Jao2021/Banco_anota-ped
 
 ## Objetivo
-- Site modelo para um restaurante japones.
+- Aplicativo para registrar e gerenciar pedidos.
 - Praticar programação front-end em aplicativos.
 
 ## Tecnologias utilizadas
