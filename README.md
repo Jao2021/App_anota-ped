@@ -7,7 +7,7 @@ Repositório do banco de dados : https://github.com/Jao2021/Banco_anota-ped
 
 ## Objetivo
 - Site modelo para um restaurante japones.
-- Praticar programação front-end.
+- Praticar programação front-end em aplicativos.
 
 ## Tecnologias utilizadas
 <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" /> 
